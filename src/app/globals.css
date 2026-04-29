@@ -641,6 +641,21 @@ body::before {
   opacity: 0.8;
 }
 
+/* ========== HEROINE ========== */
+.characters__row--heroine {
+  margin-bottom: 3rem;
+}
+
+.heroine__avatar-frame {
+  width: 140px;
+  height: 140px;
+}
+
+.heroine__avatar {
+  width: 140px;
+  height: 140px;
+}
+
 /* ========== CHARACTERS ========== */
 .characters__row {
   display: flex;

@@ -257,12 +257,13 @@ const TEAM = [
   { name: "Ibtissam", role: "Dev", avatar: "/assets/team/team-8.png" },
 ];
 
+const HEROINE = {
+  name: "L'Exploratrice",
+  quote: "« Je raconterai votre histoire. »",
+  avatar: "/assets/explorer.png",
+};
+
 const CHARACTERS = [
-  {
-    name: "L'Exploratrice",
-    quote: "« Je raconterai votre histoire. »",
-    avatar: "/assets/explorer.png",
-  },
   {
     name: "Mnara",
     quote: "« Les symboles ne mentent jamais. »",
@@ -471,10 +472,27 @@ export default function Home() {
         {/* ═══════════ PERSONNAGES ═══════════ */}
         <section className="section">
           <Reveal>
-            <p className="section__label">Les spectres</p>
+            <p className="section__label">Les personnages</p>
             <h2 className="section__title">Les spectres</h2>
             <div className="section__divider" />
           </Reveal>
+
+          <div className="characters__row characters__row--heroine">
+            <Reveal delay={0.1} y={30}>
+              <motion.div
+                className="character-card"
+                whileHover={{ y: -6, transition: { duration: 0.3 } }}
+              >
+                <div className="character-card__avatar-frame heroine__avatar-frame">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={HEROINE.avatar} alt={HEROINE.name} className="character-card__avatar heroine__avatar" />
+                </div>
+                <h3 className="character-card__name">{HEROINE.name}</h3>
+                <p className="character-card__quote">{HEROINE.quote}</p>
+              </motion.div>
+            </Reveal>
+          </div>
+
           <div className="characters__row">
             {CHARACTERS.map((char, i) => (
               <Reveal key={char.name} delay={0.12 * (i + 1)} y={30}>
