@@ -165,7 +165,7 @@ body::before {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 }
 
 .hero__logo {
