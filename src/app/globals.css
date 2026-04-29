@@ -654,6 +654,7 @@ body::before {
 .heroine__avatar {
   width: 140px;
   height: 140px;
+  object-fit: contain;
 }
 
 /* ========== CHARACTERS ========== */
@@ -718,6 +719,7 @@ body::before {
 .character-card__avatar {
   width: 128px;
   height: 128px;
+  object-fit: contain;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   background: var(--stone-dark);

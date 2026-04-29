@@ -473,7 +473,7 @@ export default function Home() {
         <section className="section">
           <Reveal>
             <p className="section__label">Les personnages</p>
-            <h2 className="section__title">Les spectres</h2>
+            <h2 className="section__title">Les personnages</h2>
             <div className="section__divider" />
           </Reveal>
 
@@ -594,64 +594,6 @@ export default function Home() {
         </section>
       </div>
 
-      {/* ═══════════ USP ═══════════ */}
-      <section className="section">
-        <Reveal>
-          <p className="section__label">Différenciation</p>
-          <h2 className="section__title">Ce qui nous démarque</h2>
-          <div className="section__divider" />
-        </Reveal>
-        <div className="usp__grid">
-          {[
-            {
-              num: "I",
-              title: "Échos temporels",
-              text: "Rejouez des fragments du passé sous forme de cutscenes interactives à assembler. Les énigmes modifient le scénario et débloquent des dialogues.",
-            },
-            {
-              num: "II",
-              title: "Variété mécanique",
-              text: "Intégration d'éléments RPG, mini-jeux de cartes et puzzles évolutifs au sein même des énigmes. Chaque salle est une expérience différente.",
-            },
-            {
-              num: "III",
-              title: "Zéro barrière",
-              text: "Pas d'installation, pas de tutoriel à rallonge. Vous ouvrez votre navigateur, vous jouez. L'esprit Flash avec la qualité d'aujourd'hui.",
-            },
-            {
-              num: "IV",
-              title: "Narration sensorielle",
-              text: "L'histoire se raconte par la lumière, le son, les murs. Chaque puzzle résolu déclenche une réaction tangible dans le décor et l'ambiance.",
-            },
-            {
-              num: "V",
-              title: "Profondeur narrative",
-              text: "Un univers riche mêlant l'atmosphère de Layton, la profondeur d'Oxenfree et la tension d'Another Code. Chaque détail a un sens.",
-            },
-            {
-              num: "VI",
-              title: "Escape room digitale",
-              text: "Observation, déduction, satisfaction. Reliez les fragments, résolvez les mécanismes mystiques. Un défi mental conçu pour récompenser l'attention.",
-            },
-          ].map((usp, i) => (
-            <Reveal key={usp.num} delay={0.08 * (i + 1)}>
-              <motion.div
-                className="usp-card"
-                whileHover={{
-                  y: -4,
-                  borderColor: "rgba(212, 168, 67, 0.25)",
-                  transition: { duration: 0.25 },
-                }}
-              >
-                <div className="usp-card__number">{usp.num}</div>
-                <h3 className="usp-card__title">{usp.title}</h3>
-                <p className="usp-card__text">{usp.text}</p>
-              </motion.div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {/* ═══════════ ÉQUIPE ═══════════ */}
       <section className="section team">
         <div className="team__bg" />
@@ -711,54 +653,6 @@ export default function Home() {
               >
                 <span className="reference-row__label">{ref.label}</span>
                 <span className="reference-row__games">{ref.games}</span>
-              </motion.div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      {/* ═══════════ TECH ═══════════ */}
-      <section className="section">
-        <Reveal>
-          <p className="section__label">Technologies</p>
-          <h2 className="section__title">Stack technique</h2>
-          <div className="section__divider" />
-        </Reveal>
-        <div className="tech__stack">
-          {[
-            {
-              name: "ReactJS",
-              role: "Frontend & Interface",
-              logo: "/assets/react.svg",
-            },
-            {
-              name: "Node.js",
-              role: "Backend & API",
-              logo: "/assets/nodejs.svg",
-            },
-            {
-              name: "Phaser",
-              role: "Moteur de jeu",
-              logo: "/assets/phaser.png",
-            },
-          ].map((tech, i) => (
-            <Reveal key={tech.name} delay={0.1 * (i + 1)}>
-              <motion.div
-                className="tech-card"
-                whileHover={{
-                  y: -3,
-                  borderColor: "rgba(212, 168, 67, 0.2)",
-                  transition: { duration: 0.25 },
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={tech.logo}
-                  alt={tech.name}
-                  className="tech-card__logo"
-                />
-                <h3 className="tech-card__name">{tech.name}</h3>
-                <p className="tech-card__role">{tech.role}</p>
               </motion.div>
             </Reveal>
           ))}
