@@ -235,26 +235,26 @@ function MouseGlow() {
    ═══════════════════════════════════════════ */
 
 const TEAM = [
-  { name: "Gaultier", role: "Dev", avatar: "/assets/team/team-2.png" },
+  { name: "Gaultier", role: "Développement", avatar: "/assets/team/team-2.png" },
   {
     name: "Mattéo",
-    role: "Création / Game Design",
+    role: "Création graphique",
     avatar: "/assets/team/team-3.png",
   },
-  { name: "Illona", role: "Dev / Scénario", avatar: "/assets/team/team-7.png" },
+  { name: "Illona", role: "Storytelling / QA", avatar: "/assets/team/team-7.png" },
   {
     name: "François",
-    role: "Dev / Game Design",
+    role: "Game Design & Dev",
     avatar: "/assets/team/team-5.png",
   },
-  { name: "Noémie", role: "Dev", avatar: "/assets/team/team-1.png" },
-  { name: "Coranthin", role: "Dev", avatar: "/assets/team/team-6.png" },
+  { name: "Noémie", role: "Storytelling / QA", avatar: "/assets/team/team-1.png" },
+  { name: "Coranthin", role: "Game Design & Dev", avatar: "/assets/team/team-6.png" },
   {
     name: "Wilfrid",
-    role: "Dev / Game Design",
+    role: "Game Design & Dev",
     avatar: "/assets/team/team-4.png",
   },
-  { name: "Ibtissam", role: "Dev", avatar: "/assets/team/team-8.png" },
+  { name: "Ibtissam", role: "Développement", avatar: "/assets/team/team-8.png" },
 ];
 
 const HEROINE = {
